@@ -7,10 +7,17 @@
 
 import Foundation
 
-enum HTTPMethod: String {
-    case get     = "GET"
-    case post    = "POST"
-    case put     = "PUT"
-    case delete  = "DELETE"
+enum HttpMethod {
+    case get([URLQueryItem])
+    case post(Data?)
+    
+    var name: String {
+        switch self {
+            case .get:
+                return "GET"
+            case .post:
+                return "POST"
+        }
+    }
 }
 
