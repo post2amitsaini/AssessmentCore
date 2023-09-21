@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum HttpMethod {
+public enum HttpMethod {
     case get([URLQueryItem])
     case post(Data?)
     
-    var name: String {
+    public var name: String {
         switch self {
             case .get:
                 return "GET"

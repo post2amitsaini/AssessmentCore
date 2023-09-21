@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct Resource<T: Codable> {
+public struct Resource<T: Codable> {
     
-    let url: URL
-    var method: HttpMethod = .get([])
+    public let url: URL
+    public var method: HttpMethod = .get([])
+    
+    public init(url: URL, method: HttpMethod = .get([])) {
+        self.url = url
+        self.method = method
+    }
 }
