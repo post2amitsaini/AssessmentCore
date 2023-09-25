@@ -10,4 +10,5 @@ import Foundation
 public struct Configuration {
     public static let baseUrl = "api.themoviedb.org"
     public static let apiKey = "2696829a81b1b5827d515ff121700838"
+    public static let imageBaseUrl = "https://image.tmdb.org/t/p/w500/"
 }
